@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSocket Group Chat</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="chat-container">
@@ -12,7 +13,8 @@
         <div id="chat-log" class="chat-log"></div>
         <input type="text" id="chat-message-input" placeholder="Введите ваше сообщение">
         <button id="chat-message-submit">Отправить</button>
+        <ul id="user-list"></ul>
     </div>
-    <script src="/static/js/group_chat.js"></script>
+    <script src="{% static 'js/group_chat.js' %}"></script>
 </body>
 </html>

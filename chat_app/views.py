@@ -4,7 +4,7 @@ from .serializers import UserSerializer, MessageSerializer, ChatSerializer, Grou
 from django.shortcuts import render
 
 def group_chat(request):
-    return render(request, 'group_chat.html', {'room_name': '1'})  # замените '1' на нужный идентификатор чата
+    return render(request, 'group_chat.html')  # замените '1' на нужный идентификатор чата
 
 
 class UserViewSet(viewsets.ModelViewSet):
